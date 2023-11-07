@@ -13,18 +13,24 @@ const { title } = Astro.props
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body class="flex flex-col h-full">
-    <slot name="header">
-      <header class="flex-grow-0 flex-shrink-0">Header</header>
-    </slot>
+    <header class="flex-grow-0 flex-shrink-0">
+      <slot name="header" />
+    </header>
     <main class="flex-grow flex-shrink-0 flex flex-col">
       <slot />
     </main>
-    <slot name="footer">
-      <footer class="flex-grow-0 flex-shrink-0">Footer</footer>
-    </slot>
+    <footer class="flex-grow-0 flex-shrink-0">
+      <slot name="footer" />
+    </footer>
   </body>
 </html>
