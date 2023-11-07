@@ -22,7 +22,7 @@ export const GET: APIRoute = async function ({ params }) {
     const inOneDay = new Date(Date.now() + secondsInDay * 1000).toUTCString()
     const headers = new Headers({
       'Content-Type': 'application/json',
-      'Cache-Control': `public, max-age=${secondsInDay}}`,
+      'Cache-Control': `public, max-age=${secondsInDay}`,
       Expires: inOneDay,
     })
 
