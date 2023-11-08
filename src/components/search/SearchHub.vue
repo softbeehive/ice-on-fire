@@ -1,5 +1,9 @@
 <template>
-  <form class="flex flex-col flex-grow h-full" @submit.prevent="handleSubmit">
+  <form
+    class="flex flex-col flex-grow h-full"
+    data-test="search-houses-form"
+    @submit.prevent="handleSubmit"
+  >
     <div
       class="flex flex-col flex-grow-0 flex-shrink-0 justify-center items-center gap-3 py-4 sm:flex-row"
     >
@@ -9,11 +13,13 @@
         placeholder="What house?"
         minlength="1"
         required
+        data-test="search-houses-input"
       />
       <ButtonFilled
         class="w-full sm:w-40 h-12"
         type="submit"
         :disabled="loading"
+        data-test="search-houses-submit"
       >
         {{ buttonText }}
       </ButtonFilled>

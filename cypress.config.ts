@@ -6,5 +6,6 @@ export default defineConfig({
       // implement node event listeners here
     },
     supportFile: false,
+    baseUrl: 'https://ice-and-fire.softbeehive.com',
   },
 })
