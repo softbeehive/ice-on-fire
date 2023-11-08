@@ -1,6 +1,8 @@
 <template>
-  <div class="flex flex-col gap-4 justify-center">
-    <div v-if="house?.name" class="font-bold text-2xl">{{ house?.name }}</div>
+  <div class="flex flex-col gap-4 justify-center pb-10">
+    <div v-if="house?.name" class="font-bold text-2xl py-4">
+      {{ house?.name }}
+    </div>
     <div
       v-for="([fieldName = '', fieldValue], i) in fields"
       :key="fieldName + i"
@@ -10,7 +12,7 @@
     </div>
     <div v-if="titles?.length">
       <div class="font-semibold">Titles</div>
-      <ul class="list-decimal">
+      <ul>
         <li v-for="title in titles" :key="title">
           {{ title }}
         </li>
