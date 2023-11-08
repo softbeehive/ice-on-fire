@@ -269,7 +269,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Cinzel Decorative', 'serif'],
+        display: 'Cinzel Decorative, serif',
       },
     },
   },
