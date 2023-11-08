@@ -15,9 +15,10 @@ export const GET: APIRoute = async function ({ params }) {
       )
     )
     // Filter houses by query
+    const safeQuery = query?.toLowerCase()
     const houses = allHouses
       .flat()
-      .filter((house) => house.name.toLowerCase().includes(query))
+      .filter((house) => house.name.toLowerCase().includes(safeQuery))
 
     // Prepare response headers
     const secondsInDay = 86400
