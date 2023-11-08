@@ -1,5 +1,6 @@
 # build output
 dist/
+.netlify/
 
 # generated types
 .astro/
@@ -14,7 +15,6 @@ yarn-error.log*
 pnpm-debug.log*
 
 # environment variables
-.env
 .env.production
 
 # macOS-specific files
