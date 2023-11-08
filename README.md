@@ -57,7 +57,7 @@ pnpm dev
 ## 🌳 Future
 
 - Create a universal search with autocomplete to search characters, events, and houses
-- Own the data to improve the quality and performance of web app
+- Own the data to improve content quality and performance of web app
 - Personalize houses: add heraldry, custom theming, images of characters
 - Build a map of Westeros & Essos to explore great houses and their relationships
 
