@@ -4,12 +4,14 @@ export const GET: APIRoute = async function ({ params }) {
   const { query } = params
   // API allows max 50 entries per page, so we need to fetch 9 pages
   const pages = Array.from({ length: 9 }, (_, i) => i + 1)
+  const apiBaseUrl = import.meta.env.API_OF_ICE_AND_FIRE
+
   try {
     const allHouses = await Promise.all(
       pages.map((pageNum) =>
-        fetch(
-          `https://www.anapioficeandfire.com/api/houses?pageSize=50&page=${pageNum}`
-        ).then((response) => response.json())
+        fetch(`${apiBaseUrl}/houses?pageSize=50&page=${pageNum}`).then(
+          (response) => response.json()
+        )
       )
     )
     // Filter houses by query
