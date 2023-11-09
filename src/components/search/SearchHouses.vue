@@ -10,7 +10,7 @@
         :key="house.name"
         class="col-span-1 flex rounded-md shadow-sm bg-primary-container dark:bg-primary-dark text-on-primary-container dark:text-on-primary-dark"
       >
-        <a :href="makeHouseUrl(house)">
+        <a :href="makeHouseUrl(house)" class="block w-full">
           <div class="flex flex-1 justify-between rounded-md">
             <div class="flex-1 px-4 py-3 text-sm">
               <div class="text-lg font-semibold">{{ house.name }}</div>
