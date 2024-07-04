@@ -1,9 +1,5 @@
 # Houses of Ice and Fire
 
-❄️  
-Live demo - https://ice-and-fire.softbeehive.com  
-🔥
-
 ## ⚡️ Summary
 
 - Search by house name (full or partial)
